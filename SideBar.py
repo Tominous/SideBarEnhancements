@@ -304,7 +304,7 @@ class SideBarFolderCloseViewsCommand(sublime_plugin.WindowCommand):
                 view.close()
 
     def collapse_sidebar_folder(self):
-        # Window().run_command("reveal_in_side_bar") the tree animation breaks the functionality
+         Window().run_command("reveal_in_side_bar") the tree animation breaks the functionality
         Window().run_command("focus_side_bar")
         Window().run_command("move", {"by": "characters", "forward": False})
 
